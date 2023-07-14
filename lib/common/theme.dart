@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final themeNotifierProvider = StateNotifierProvider<ThemeNotifier, Brightness>(
   (ref) => ThemeNotifier(),
-  name: 'ThemeNotifier',
+  name: (ThemeNotifier).toString(),
 );
 
 class ThemeNotifier extends StateNotifier<Brightness> {
