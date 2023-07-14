@@ -31,11 +31,11 @@ class WelcomePage extends ConsumerWidget {
               const SizedBox(height: 20),
               Switch(
                 value: themeMode == Brightness.dark,
-                onChanged: (_) {
+                onChanged: (isDark) {
                   ref.read(themeNotifierProvider.notifier).toggle();
                   showSnackbar(
                     context,
-                    "Your theme has been switched to ${themeMode == Brightness.dark ? 'dark' : 'light'}",
+                    "Your theme has been switched to ${isDark ? 'dark' : 'light'}",
                   );
                 },
               ),
