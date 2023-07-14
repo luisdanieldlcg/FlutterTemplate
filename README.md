@@ -1,15 +1,30 @@
-# flutter_firebase_template
+# Flutter Template
 
-A new Flutter project.
+This is a minimal flutter template for developing larger and scalable apps.
+
+## Features
+
+- Riverpod state management solution
+- Logging setup
+- Riverpod update observable
+- Light / dark theme toggle
+- Functional features with fpdart
+- Auth feature skeleton
+- Routing skeleton with error page.
+
+## Dependencies
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  logger: ^1.4.0
+  flutter_riverpod: ^2.3.6
+  fpdart: ^0.6.0
+```
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
