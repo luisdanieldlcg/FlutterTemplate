@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_template/common/theme.dart';
+import 'package:flutter_firebase_template/common/util/misc.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class WelcomePage extends ConsumerWidget {
@@ -30,8 +31,12 @@ class WelcomePage extends ConsumerWidget {
               const SizedBox(height: 20),
               Switch(
                 value: themeMode == Brightness.dark,
-                onChanged: (value) {
+                onChanged: (_) {
                   ref.read(themeNotifierProvider.notifier).toggle();
+                  showSnackbar(
+                    context,
+                    "Your theme has been switched to ${themeMode == Brightness.dark ? 'dark' : 'light'}",
+                  );
                 },
               ),
               const Spacer(),
