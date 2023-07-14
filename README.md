@@ -26,6 +26,8 @@ dependencies:
 
 ## Getting Started
 
+This template was tested with Flutter 3.10 but it should work with slightly older versions above 3.0.
+
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
